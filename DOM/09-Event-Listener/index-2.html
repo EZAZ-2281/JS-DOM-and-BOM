@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="demo">Click me</button>
+    <script>
+        let x = document.getElementById("demo"); 
+        x.addEventListener("click", myFunc1); 
+        x.addEventListener("click", myFunc2);
+        function myFunc1(){
+            alert("FIrst alert"); 
+        } 
+        function myFunc2(){
+            alert("Second alert"); 
+        }
+    </script>
+</body>
+</html>

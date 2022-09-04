@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn">Click me</button>
+    <p id="demo"></p>
+    <script>
+        let x = document.getElementById("btn");
+        x.addEventListener("mousemove", func1);
+        x.addEventListener("click", func2);
+        x.addEventListener("mouseout", func3);
+        function func1() {
+            let a = document.getElementById("demo");
+            a.innerHTML = "Mouse over<br>";
+        }
+        function func2() {
+            let c = document.getElementById("demo");
+            c.innerHTML = "Clicked<br>";
+        }
+        function func3() {
+            let b = document.getElementById("demo");
+            b.innerHTML = "Mouse out<br>";
+        }
+
+    </script>
+</body>
+
+</html>
+https://www.w3schools.com/js/js_htmldom_eventlistener.asp#:~:text=Try%20it%20Yourself%20%C2%BB-,Passing%20Parameters,-When%20passing%20parameter
