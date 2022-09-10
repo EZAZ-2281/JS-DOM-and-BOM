@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Dhaka, Bangladesh</h1>
+    <p>I live in Dhaka</p>
+    <div id="demo">
+        <p>First Line</p>
+        <p>Second Line</p>
+    </div>
+    <script>
+        let a = document.createElement("p"); 
+        let b = document.createTextNode("This is text node");
+        a.appendChild(b); 
+        let c = document.getElementById("demo"); 
+        c.appendChild(a); 
+    </script>
+</body>
+</html>
